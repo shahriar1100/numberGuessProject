@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="src/all.min.css" />
+    <link rel="stylesheet" href="src/output.css" />
+  </head>
+  <body>
+    <div class="container m-auto">
+      <!-- multy step conditional form  -->
+
+      <!-- 1st screen -->
+      <div
+        class="firstScreen text-center max-w-[800px] rounded-2xl mt-10 bg-violet-300 py-56 px-20 m-auto"
+        id="firstScreen"
+      >
+        <div class="firstScreenContent">
+          <h1 class="text-5xl font-bold text-[#ffffff] text-center mb-4">
+            Wanna Play game?
+          </h1>
+          <input
+            type="text"
+            placeholder="what is your name"
+            id="playerNameInputOne"
+            class="input m-auto my-8 py-7 block rounded-2xl"
+          />
+          <button
+            class="btn btn-outline px-10 rounded-3xl mb-2"
+            id="startBtnOne"
+          >
+            Start Game
+          </button>
+          <div
+            role="alert"
+            class="alert alert-error hidden"
+            id="nameErrorFirst"
+          >
+            <span>Name Is Missing</span>
+          </div>
+        </div>
+      </div>
+      <!-- 1st screen -->
+
+      <!-- 2nd screen -->
+      <div
+        class="secendScreen text-center max-w-[800px] rounded-2xl mt-10 bg-violet-500 py-56 px-20 m-auto hidden"
+        id="scndScreen"
+      >
+        <div class="scndScreenContent">
+          <h1 class="text-5xl font-bold text-[#ffffff] text-center mb-4">
+            Player - 1
+          </h1>
+          <input
+            type="number"
+            placeholder="Give a number"
+            id="playerNumberInput"
+            class="input m-auto my-8 py-7 block rounded-2xl"
+          />
+          <button
+            class="btn btn-outline px-10 rounded-3xl mb-2"
+            id="playerOneBtn"
+          >
+            Let’s Play
+          </button>
+          <div
+            role="alert"
+            class="alert alert-error hidden"
+            id="numberErrorScnd"
+          >
+            <span>Please give a number</span>
+          </div>
+        </div>
+      </div>
+      <!-- 2nd screen -->
+
+      <!-- 3rd screen -->
+      <div
+        class="thirdScreen text-center max-w-[800px] rounded-2xl mt-10 bg-violet-700 py-56 px-20 m-auto hidden"
+        id="thirdScreen"
+      >
+        <div class="thirdScreenContent">
+          <h1 class="text-5xl font-bold text-[#ffffff] text-center mb-4">
+            Player - 2 Name
+          </h1>
+          <input
+            type="text"
+            placeholder="what is your name"
+            id="playerNameInputTwo"
+            class="input m-auto my-8 py-7 block rounded-2xl"
+          />
+          <button
+            class="btn btn-outline px-10 rounded-3xl mb-2"
+            id="startBtnTwo"
+          >
+            Start Game
+          </button>
+          <div role="alert" class="alert alert-error hidden" id="nameErrorScnd">
+            <span>Name Is Missing</span>
+          </div>
+        </div>
+      </div>
+      <!-- 3rd screen -->
+
+      <!-- 4rth screen -->
+      <div
+        class="fourthScreen text-center max-w-[800px] rounded-2xl mt-10 bg-red-400 py-56 px-20 m-auto hidden"
+        id="fourthScreen"
+      >
+        <div class="fourthScreenContent">
+          <h1 class="text-5xl font-bold text-[#ffffff] text-center mb-4">
+            Player - 2
+          </h1>
+          <input
+            type="text"
+            placeholder="Give a number"
+            id="playerNumberInputTwo"
+            class="input m-auto my-8 py-7 block rounded-2xl"
+          />
+          <button
+            class="btn btn-outline px-10 rounded-3xl mb-2"
+            id="playerTwoBtn"
+          >
+            Let’s Play
+          </button>
+          <div
+            role="alert"
+            class="alert alert-error hidden"
+            id="numberErrorScnd"
+          >
+            <span>Please give a number</span>
+          </div>
+        </div>
+      </div>
+      <!-- 4rth screen -->
+
+      <!-- 5th screen -->
+      <div
+        class="fourthScreen text-center max-w-[800px] rounded-2xl mt-10 bg-amber-500 py-56 px-20 m-auto hidden"
+        id="fifthScreen"
+      >
+        <div class="fourthScreenContent">
+          <h1 class="text-9xl font-bold text-[#ffffff] text-center mb-4">
+            Game Over
+          </h1>
+        </div>
+      </div>
+      <!-- 5th screen -->
+
+      <script src="js/script.js"></script>
+    </div>
+  </body>
+</html>
