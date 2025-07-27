@@ -49,13 +49,13 @@
         id="scndScreen"
       >
         <div class="scndScreenContent">
-          <h1 class="text-5xl font-bold text-[#ffffff] text-center mb-4">
+          <h1 class="text-5xl font-bold text-[#ffffff] text-center mb-4" id="scndScreenPlayerOneName">
             Player - 1
           </h1>
           <input
             type="number"
             placeholder="Give a number"
-            id="playerNumberInput"
+            id="playerNumberInputOne"
             class="input m-auto my-8 py-7 block rounded-2xl"
           />
           <button
@@ -69,7 +69,7 @@
             class="alert alert-error hidden"
             id="numberErrorScnd"
           >
-            <span>Please give a number</span>
+            <span>Error! Please give a number</span>
           </div>
         </div>
       </div>
@@ -109,11 +109,11 @@
         id="fourthScreen"
       >
         <div class="fourthScreenContent">
-          <h1 class="text-5xl font-bold text-[#ffffff] text-center mb-4">
+          <h1 class="text-5xl font-bold text-[#ffffff] text-center mb-4" id="forthScreenPlayerTwoName">
             Player - 2
           </h1>
           <input
-            type="text"
+            type="number"
             placeholder="Give a number"
             id="playerNumberInputTwo"
             class="input m-auto my-8 py-7 block rounded-2xl"
@@ -127,7 +127,7 @@
           <div
             role="alert"
             class="alert alert-error hidden"
-            id="numberErrorScnd"
+            id="numberErrorLast"
           >
             <span>Please give a number</span>
           </div>
@@ -144,6 +144,8 @@
           <h1 class="text-9xl font-bold text-[#ffffff] text-center mb-4">
             Game Over
           </h1>
+          <h2 class="text-5xl font-bold text-[#000000] text-center mb-4 hidden pt-8" id="playerOneWin">Player One Win</h2>
+          <h2 class="text-5xl font-bold text-[#000000] text-center mb-4 hidden pt-8" id="playerTwoWin">Player Two Win</h2>
         </div>
       </div>
       <!-- 5th screen -->
